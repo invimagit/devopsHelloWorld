@@ -5,6 +5,7 @@ pipeline {
     stage ('Git-Checkout') {
       steps {
         echo "Checking out project from Git repo...";
+        git clone https://github.com/invimagit/devopsHelloWorld.git
       }
     }
 
